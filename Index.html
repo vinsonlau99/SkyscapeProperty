@@ -3,9 +3,418 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Château De Versailles</title>
+    <link rel="icon" href="images/CDV-website-logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .video {
+            text-align: center;
+        }
+
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-image: url('images/CDV-Lobby-semi-transparent.png');
+            background-repeat: repeat;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .roomGallery, .facilityGallery {
+            position: relative;
+        }
+
+        .roomSlides, facilitySlides {
+            display: none;
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        .roomPrev, .roomNext {
+            cursor: pointer;
+            position: absolute;
+            top: 110%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .facilityPrev, .facilityNext {
+            cursor: pointer;
+            position: absolute;
+            top: 210%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .roomNext, .facilityNext {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            margin-right: 15%;
+        }
+
+            .roomPrev:hover,
+            .roomNext:hover,
+            .facilityPrev:hover,
+            .facilityNext:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+
+        .demo {
+            opacity: 0.6;
+        }
+
+            .active, .demo:hover {
+                opacity: 1;
+            }
+
+        .title {
+            text-align: center;
+            color: saddlebrown;
+        }
+
+        .locations {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .mapContainer {
+            text-align: center;
+            margin-left: -15%;
+            margin-right: -15%;
+        }
+
+            .mapContainer .map {
+                width: 49%;
+            }
+
+        .priceContainer {
+            text-align: center;
+        }
+    </style>
+    <style>
+        body {
+            margin: 0;
+            height: 2000px;
+        }
+
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+            .icon-bar a {
+                display: block;
+                text-align: center;
+                padding: 16px;
+                transition: all 0.3s ease;
+                color: white;
+                font-size: 20px;
+            }
+
+                .icon-bar a:hover {
+                    background-color: #000;
+                }
+
+        .facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa
+    </style>
 </head>
+
 <body>
-    Skyscape Property
+    <div class="container">
+        <div class="">
+            <h1 class="title" style="font-size: 4vw; font-family: 'Copperplate Gothic'; margin-bottom: 0px;">Château De Versailles</h1>
+            <h2 class="title" style="font-size: 2vw; margin-top: 0px; font-family: 'Copperplate Gothic'">A Luxury French Architectural Design
+            </h2>
+        </div>
+        <div class="video">
+            <video width="720px" controls>
+                <source src="videos/cdv-video.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+        <!-- Room Views -->
+        <h1 class="title">Room Views</h1>
+        <div class="roomGallery">
+            <div class="roomSlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="images/Rooms/RoomView01.jpg" style="width: 100%">
+            </div>
+
+            <div class="roomSlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="images/Rooms/RoomView02.jpg" style="width: 100%">
+            </div>
+
+            <div class="roomSlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="images/Rooms/RoomView03.jpg" style="width: 100%">
+            </div>
+
+            <div class="roomSlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="images/Rooms/RoomView04.jpg" style="width: 100%">
+            </div>
+
+            <div class="roomSlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="images/Rooms/RoomView05.jpg" style="width: 100%">
+            </div>
+
+            <div class="roomSlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="images/Rooms/RoomView06.jpg" style="width: 100%">
+            </div>
+        </div>
+
+        <a class="roomPrev" onclick="plusRoomSlides(-1)">&#10094;</a>
+        <a class="roomNext" onclick="plusRoomSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+            <p id="roomCaption"></p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img class="roomDemo cursor" src="images/Rooms/RoomView01.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Room View 01">
+            </div>
+            <div class="column">
+                <img class="roomDemo cursor" src="images/Rooms/RoomView02.jpg" style="width: 100%" onclick="currentSlide(2)" alt="Room View 02">
+            </div>
+            <div class="column">
+                <img class="roomDemo cursor" src="images/Rooms/RoomView03.jpg" style="width: 100%" onclick="currentSlide(3)" alt="Room View 03">
+            </div>
+            <div class="column">
+                <img class="roomDemo cursor" src="images/Rooms/RoomView04.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Room View 04">
+            </div>
+            <div class="column">
+                <img class="roomDemo cursor" src="images/Rooms/RoomView05.jpg" style="width: 100%" onclick="currentSlide(5)" alt="Room View 05">
+            </div>
+            <div class="column">
+                <img class="roomDemo cursor" src="images/Rooms/RoomView06.jpg" style="width: 100%" onclick="currentSlide(6)" alt="Room View 06">
+            </div>
+        </div>
+        <!-- End of Room Views -->
+
+        <!-- Facility Views -->
+        <h1 class="title">Facility Views</h1>
+        <div class="facilityGallery">
+            <div class="facilitySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="images/Facilities/DropoffLobby.jpg" style="width: 100%">
+            </div>
+
+            <div class="facilitySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="images/Facilities/Ballroom.jpg" style="width: 100%">
+            </div>
+
+            <div class="facilitySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="images/Facilities/Coffeehouse.jpg" style="width: 100%">
+            </div>
+
+            <div class="facilitySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="images/Facilities/GymRoom.jpg" style="width: 100%">
+            </div>
+
+            <div class="facilitySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="images/Facilities/SwimmingPool.jpg" style="width: 100%">
+            </div>
+
+            <div class="facilitySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="images/Facilities/BBQArea.jpg" style="width: 100%">
+            </div>
+        </div>
+
+        <a class="facilityPrev" onclick="plusFacilitySlides(-1)">&#10094;</a>
+        <a class="facilityNext" onclick="plusFacilitySlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+            <p id="facilityCaption"></p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img class="facilityDemo cursor" src="images/Facilities/DropoffLobby.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Dropoff Lobby">
+            </div>
+            <div class="column">
+                <img class="facilityDemo cursor" src="images/Facilities/Ballroom.jpg" style="width: 100%" onclick="currentSlide(2)" alt="Ballroom">
+            </div>
+            <div class="column">
+                <img class="facilityDemo cursor" src="images/Facilities/Coffeehouse.jpg" style="width: 100%" onclick="currentSlide(3)" alt="Coffee House">
+            </div>
+            <div class="column">
+                <img class="facilityDemo cursor" src="images/Facilities/GymRoom.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Gym Room">
+            </div>
+            <div class="column">
+                <img class="facilityDemo cursor" src="images/Facilities/SwimmingPool.jpg" style="width: 100%" onclick="currentSlide(5)" alt="Swimming Pool">
+            </div>
+            <div class="column">
+                <img class="facilityDemo cursor" src="images/Facilities/BBQArea.jpg" style="width: 100%" onclick="currentSlide(6)" alt="BBQ Area">
+            </div>
+        </div>
+        <!-- End of Facility Views -->
+
+        <!-- Locations -->
+        <div class="locationsContainer">
+            <img class="locations" src="images/Locations/Accessibility.png" />
+            <img class="locations" src="images/Locations/Healthcare.png" />
+            <img class="locations" src="images/Locations/Educational.png" />
+            <img class="locations" src="images/Locations/Amenities.png" />
+            <img class="locations" src="images/Locations/NearbyEateries.png" />
+            <img class="locations" src="images/Locations/Recreation.png" />
+            <img class="locations" src="images/Locations/Tourism.png" />
+        </div>
+        <!-- End of Locations -->
+
+        <!-- Map -->
+        <div class="mapContainer">
+            <h1 class="title">Map Location</h1>
+            <img class="map" src="images/CDV-SitePlan.png" />
+            <img class="map" src="images/CDV-Map.png" />
+        </div>
+        <!-- End of Map -->
+
+        <!-- Price -->
+        <div class="priceContainer">
+            <h1 class="title">Limited Offer Price</h1>
+            <img class="price" src="images/CDV-Poster.png" />
+        </div>
+        <!-- End of Price -->
+    </div>
+
+    <div class="socialMediaContainer">
+        <!-- Social Media Button -->
+        <div class="icon-bar">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=61551598330412" class="facebook"><i class="fa fa-facebook"></i></a>
+        </div>
+        <!-- End of Social Media Button -->
+    </div>
+
+    <script>
+        let roomSlideIndex = 1;
+        showRoomSlides(roomSlideIndex);
+
+        function plusRoomSlides(n) {
+            showRoomSlides(roomSlideIndex += n);
+        }
+
+        function currentRoomSlide(n) {
+            showRoomSlides(roomSlideIndex = n);
+        }
+
+        function showRoomSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("roomSlides");
+            let dots = document.getElementsByClassName("roomDemo");
+            let captionText = document.getElementById("roomCaption");
+            if (n > slides.length) { roomSlideIndex = 1 }
+            if (n < 1) { roomSlideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[roomSlideIndex - 1].style.display = "block";
+            dots[roomSlideIndex - 1].className += " active";
+            captionText.innerHTML = dots[roomSlideIndex - 1].alt;
+        }
+    </script>
+    <script>
+        let facilitySlideIndex = 1;
+        showFacilitySlides(facilitySlideIndex);
+
+        function plusFacilitySlides(n) {
+            showFacilitySlides(facilitySlideIndex += n);
+        }
+
+        function currentFacilitySlide(n) {
+            showFacilitySlides(facilitySlideIndex = n);
+        }
+
+        function showFacilitySlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("facilitySlides");
+            let dots = document.getElementsByClassName("facilityDemo");
+            let captionText = document.getElementById("facilityCaption");
+            if (n > slides.length) { facilitySlideIndex = 1 }
+            if (n < 1) { facilitySlideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[facilitySlideIndex - 1].style.display = "block";
+            dots[facilitySlideIndex - 1].className += " active";
+            captionText.innerHTML = dots[facilitySlideIndex - 1].alt;
+        }
+    </script>
 </body>
 </html>

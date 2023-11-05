@@ -5,12 +5,20 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{18964522-A849-400C-8310-4956FA74071A}"
 	ProjectSection(SolutionItems) = preProject
-		Index.html = Index.html
+		index.html = index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{0A18ACC7-EC17-4292-BD28-B6A7677C02C5}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\CDV\CDV images\CDV-Lobby.png = ..\..\..\Desktop\CDV\CDV images\CDV-Lobby.png
 	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0A18ACC7-EC17-4292-BD28-B6A7677C02C5} = {18964522-A849-400C-8310-4956FA74071A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CCEDD0B5-C067-453D-AB7B-AAAE886A0236}
